@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <title>Modelo Bootstrap</title>
+
+    <!-- Bootstrap CSS by CND -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+
+    <style>
+      *{
+        font-family: 'IBM Plex Sans', sans-serif;
+      }
+      .page-title {
+        font-size: 1.5rem;
+        font-family: 'Playfair Display', serif;
+      }
+      .notice-title {
+        font-family: 'Playfair Display', serif;
+      }
+      .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      } 
+
+      .card{
+        width: 17rem;
+      }
+      
+      @media screen and (max-width: 1400px){
+        .card{
+          width: 17rem;
+        }
+      }
+      @media screen and (max-width: 1399px){
+        .card{
+          width: 12rem;
+        }
+      }
+      @media screen and (max-width: 1023px) and (min-width: 641px){
+        .card{
+          width: 13.5rem;
+        }
+      }
+      @media screen and (max-width: 640px){
+        .card{
+          width: 100%;
+        }
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <header class="border-bottom py-3">
+          <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 small">
+              16/10/2024
+            </div>
+            <h2 class="col-4 text-center align-content-center page-title">
+              Systempunk Newsletter
+            </h2>
+            <div class="col-4 d-flex justify-content-end align-items-center">
+              <a class="btn btn-outline-secondary" href="#">Sign up</a>
+              </div>  
+          </div>
+    </header>
+  </div>
+  <main class="container">
+    <div class="p-4 p-md-5 mb-4 rounded bg-secondary text-white" style="background-image: url('https://picsum.photos/600/600/?blur=10'); background-size: cover; background-position: center; object-fit: cover;">
+      <div class="col-lg-6 px-0">
+      <h2 class="display-4 font-italic notice-title">Title of a longer featured blog post</h2>
+      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+      <p class="lead mb-0"><a href="#" class="text-white-50 fw-bold">Continue reading...</a></p>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Tale</strong>
+            <h3 class="mb-0">Featured post</h3>
+            <div class="mb-1 text-body-secondary">Fev 12</div>
+            <p class="card-text mb-auto">An old man with mysterious powers meets a simple couple in a utopian society.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="https://picsum.photos/600/600" alt="O simples Senhor">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Foundation</strong>
+            <h3 class="mb-0">Chaos</h3>
+            <div class="mb-1 text-body-secondary">Jan 11</div>
+            <p class="mb-auto">One of the fundamental concepts that from movement to universe.</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Continue reading
+              <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img" width="200" height="250" src="https://picsum.photos/600/500" alt="O simples Senhor">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-5">
+
+        <div class="col-md-8">
+          <div class="card-list">
+
+            <div class="card">
+              <img src="https://picsum.photos/600/600" class="card-img-top" alt="...">
+              <div class="card-header d-inline-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <small class="text-success">Foundation</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="lead mb-0"><a href="#" class="">Continue reading...</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/600/600" class="card-img-top" alt="...">
+              <div class="card-header d-inline-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <small class="text-success">Foundation</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="lead mb-0"><a href="#" class="">Continue reading...</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/600/600" class="card-img-top" alt="...">
+              <div class="card-header d-inline-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <small class="text-success">Foundation</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="lead mb-0"><a href="#" class="">Continue reading...</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/600/600" class="card-img-top" alt="...">
+              <div class="card-header d-inline-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <small class="text-success">Foundation</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="lead mb-0"><a href="#" class="">Continue reading...</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/600/600" class="card-img-top" alt="...">
+              <div class="card-header d-inline-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <small class="text-success">Foundation</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="lead mb-0"><a href="#" class="">Continue reading...</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/600/600" class="card-img-top" alt="...">
+              <div class="card-header d-inline-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <small class="text-success">Foundation</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="lead mb-0"><a href="#" class="">Continue reading...</a></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://picsum.photos/600/600" class="card-img-top" alt="...">
+              <div class="card-header d-inline-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <small class="text-success">Foundation</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="lead mb-0"><a href="#" class="">Continue reading...</a></p>
+              </div>
+            </div>
+            <div class="card" >
+              <img src="https://picsum.photos/600/600" class="card-img-top" alt="...">
+              <div class="card-header d-inline-flex justify-content-between">
+                <h5 class="card-title">Card title</h5>
+                <small class="text-success">Foundation</small>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="lead mb-0"><a href="#" class="">Continue reading...</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          <div class="p-4 mb-3 bg-body-tertiary rounded">
+            <h4 class="fst-italic">About</h4>
+            <p class="mb-0"> 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet et neque sed laoreet. Aliquam id vulputate nisl, suscipit ultricies orci. Donec id lectus metus. Vestibulum eget imperdiet nunc, eu ornare dolor. Aliquam venenatis nisi non ligula blandit, tristique pulvinar ligula blandit. Morbi iaculis libero id bibendum rhoncus. Nam gravida pulvinar augue et commodo. Nam cursus porttitor purus ac rhoncus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </div>
+  
+          <div>
+            <h4 class="fst-italic">Recent posts</h4>
+            <ul class="list-unstyled">
+              <li>
+                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                  <img width="100%" height="96" src="https://picsum.photos/300/300"/>
+                  <div class="col-lg-8">
+                    <h6 class="mb-0">Card title</h6>
+                    <small class="text-body-secondary">January 15, 2024</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                  <img width="100%" height="96" src="https://picsum.photos/300/300"/>
+                  <div class="col-lg-8">
+                    <h6 class="mb-0">Card title</h6>
+                    <small class="text-body-secondary">January 15, 2024</small>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                  <img width="100%" height="96" src="https://picsum.photos/300/300"/>
+                  <div class="col-lg-8">
+                    <h6 class="mb-0">Card title</h6>
+                    <small class="text-body-secondary">January 15, 2024</small>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="p-4">
+            <h4 class="fst-italic">Archives</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="#">March 2021</a></li>
+              <li><a href="#">February 2021</a></li>
+              <li><a href="#">January 2021</a></li>
+              <li><a href="#">December 2020</a></li>
+              <li><a href="#">November 2020</a></li>
+              <li><a href="#">October 2020</a></li>
+              <li><a href="#">September 2020</a></li>
+              <li><a href="#">August 2020</a></li>
+              <li><a href="#">July 2020</a></li>
+              <li><a href="#">June 2020</a></li>
+              <li><a href="#">May 2020</a></li>
+              <li><a href="#">April 2020</a></li>
+            </ol>
+          </div>
+  
+          <div class="p-4">
+            <h4 class="fst-italic">Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2021–2024 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
